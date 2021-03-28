@@ -13,4 +13,3 @@ RUN npm run build
 FROM nginx
 # from the previous phase, /usr/share/nginx/html is from the doc of nginx image
 COPY --from=builder /app/build /usr/share/nginx/html
-
